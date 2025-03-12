@@ -1,12 +1,11 @@
 This code is a derivative of the Webex Recording Downloader
 https://github.com/WebexSamples/WebexRecordingsDownloader.git
 
-
 This application was created to allow a customer to list all Webex recordings that will be deleted due to reaching the retention period.
 
-A customer has asked if we can create a list so they can send a custom e-mail to users who's recordings will be deleted when reaching the retention period. This code was adopted from the Webex Recording Downloader code at the link above so it retains the ability to download the recordings and has the same basic structure.
+A customer has asked if we can create a list so they can send a custom e-mail to users whose recordings will be deleted when reaching the retention period. This code was adopted from the Webex Recording Downloader code at the link above so it retains the ability to download the recordings and has the same basic structure.
 
-It is a two step process which requires the app to be ran twice.
+It is a two-step process which requires the app to be ran twice.
 
 On first run choose option 1 and provide your Webex site URL, for example _sitename.webex.com_, the retention period, and the number of days before the retention period you want to search.
 
@@ -15,7 +14,7 @@ On first run choose option 1 and provide your Webex site URL, for example _siten
 
 Run the app again choose option 2.
 
-- This will download all recordings that were retrived from step 1 and save them to the "Downloaded-Recordings" folder.
+- This will download all recordings that were retrieved from step 1 and save them to the "Downloaded-Recordings" folder.
 
 ---
 
@@ -23,7 +22,7 @@ Run the app again choose option 2.
 
 Clone project:
 
-- `git clone https://github.com/WebexSamples/WebexRecordingsDownloader.git`
+- `git clone https://github.com/tpetzold/Webex-Expiring-Recordings-List.git`
 
 Install dependencies:
 
@@ -37,7 +36,7 @@ Run app:
 
 **Setup**
 
-Unfortunatly you can't simpley us a key from the developer portal. The token generated from the developer portal won't allow you to generante a download link. You must either setup a Integration or Service App in the developer portal then authorize the app in Control Hub
+Unfortunately you can't simply us a key from the developer portal. The token generated from the developer portal won't allow you to generante a download link. You must either setup a Integration or Service App in the developer portal then authorize the app in Control Hub
 
 - Create an [Integration](https://developer.webex.com/docs/integrations) or [Service App](https://developer.webex.com/docs/service-apps) with the admin and compliance related recording scopes.
     - Required Scopes are:
@@ -54,3 +53,5 @@ Unfortunatly you can't simpley us a key from the developer portal. The token gen
 - Rename the [.env.local](.env.local) file to .env. And add .env to the .gitignore file
 - Add your Client ID, Client Secret and Refresh Token to the .env file.
 - You can also add your Access Token to the [token.json](token.json) file but the app will also ask you to enter one at first run if you haven't added it to the token.json file.
+
+
