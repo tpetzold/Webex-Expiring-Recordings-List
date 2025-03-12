@@ -1,5 +1,5 @@
 This code is a derivative of the Webex Recording Downloader
-https://github.com/WebexSamples/WebexRecordingsDownloader.git
+https://github.com/WebexSamples/WebexRecordingsDownloader
 
 This application was created to allow a customer to list all Webex recordings that will be deleted due to reaching the retention period.
 
@@ -53,5 +53,3 @@ Unfortunately you can't simply us a key from the developer portal. The token gen
 - Rename the [.env.local](.env.local) file to .env. And add .env to the .gitignore file
 - Add your Client ID, Client Secret and Refresh Token to the .env file.
 - You can also add your Access Token to the [token.json](token.json) file but the app will also ask you to enter one at first run if you haven't added it to the token.json file.
-
-
